@@ -1,0 +1,16 @@
+{
+  "name": "netcheck",
+  "version": "0.0.1",
+  "description": "Tiny tool to continually monitor internet connection",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Tim Barclay",
+  "license": "ISC",
+  "dependencies": {
+    "is-online": "^5.2.0",
+    "winston": "^2.3.0",
+    "winston-daily-rotate-file": "^1.3.1"
+  }
+}
