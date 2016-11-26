@@ -11,10 +11,10 @@ winston.add(winston.transports.Console, {
 
 function doCheck(){
     isOnline((err, online) => {
-        winston.debug("Checking...");
+        const date = new Date();
+        winston.debug(`${date.toISOString()} Checking...`);
         if(online) return;
 
-        const date = new Date();
         winston.info("No internet access");
     });
 }
